@@ -121,14 +121,24 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 ```
 ***npm install webpack-dev-server --save-dev***
 
+
+
 # First start #
+
 ##### 1 #####
-***npm init***
+***git checkout develop***
 ##### 2 #####
+***npm init***
+##### 3 #####
 ***npm install***
 
+
+
 # NOTE #
+
+
 ## 1 webpack.config.js ##
+
 ***npm dev*** ``` "dev": "webpack --mode development" ```
 ##### запускает компиляцию вебпака в моде девелопмент (тобишь читаемом) #####
 
@@ -143,3 +153,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 ***npm clear*** ``` "clear": "del-cli dist" ```
 ##### для удаления диста (например перед пулом в репу) #####
+
+
+
+## 2 useful commands and etc ##
+
+***Ctrl + C***
+##### остановить сервер #####

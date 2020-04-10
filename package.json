@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yarovenko-Dmitry/MyWebPackConfig.git"
+    "url": "git+https://github.com/Soullnik/MyWebPackConfig.git"
   },
   "bugs": {
-    "url": "https://github.com/Yarovenko-Dmitry/MyWebPackConfig/issues"
+    "url": "https://github.com/Soullnik/MyWebPackConfig/issues"
   },
-  "homepage": "https://github.com/Yarovenko-Dmitry/MyWebPackConfig#readme"
+  "homepage": "https://github.com/Soullnik/MyWebPackConfig#readme"
 }
