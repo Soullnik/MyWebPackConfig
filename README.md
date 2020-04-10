@@ -81,3 +81,9 @@ sudo npm install file-loader --save-dev
     },
   ],
 },
+
+npm install --save-dev mini-css-extract-plugin
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+add style.scss to entry
+

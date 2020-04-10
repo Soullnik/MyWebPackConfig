@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = (env, options) => {
   const isProduction = options.mode === 'production';
@@ -9,7 +10,7 @@ module.exports = (env, options) => {
     mode: isProduction ? 'production' : 'development',
     devtool: isProduction ? 'none' : 'source-map',
     watch: !isProduction,
-    entry: './src/app.js',
+    entry: ['./src/app.js', './src/style.scss'],
     output: {
       path: path.join(__dirname, '/dist/'),
       filename: 'bundle.js'
@@ -28,9 +29,9 @@ module.exports = (env, options) => {
           }
         },
         {
-          test: /\.scss/,
+          test: /\.scss$/,
           use: [
-            'style-loader', 'sass-loader', 'sass-loader'
+            MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' 
           ]
         },
         {
@@ -46,6 +47,9 @@ module.exports = (env, options) => {
     
     plugins: [
       new CleanWebpackPlugin(),
+      new MiniCssExtractPlugin({
+        filename: 'bundle.css'
+      })
     ]
   }
 
