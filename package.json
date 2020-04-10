@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --mode development --open",
     "clear": "del-cli dist"
   },
-  "author": "Nikolay lozicki",
+  "author": "webpack",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
