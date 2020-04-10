@@ -120,3 +120,20 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 },
 ```
 ***npm install webpack-dev-server --save-dev***
+
+# first start #
+1
+***npm install***
+
+
+# NOTE #
+## 1 webpack.config.js ##
+``` "dev": "webpack --mode development" ``` запускает компиляцию вебпака в моде девелопмент (тобишь читаемом)
+
+``` "build": "webpack --mode production" ``` запускает компиляцию вебпака в продакш, когда все сжимается
+
+``` "watch": "webpack --mode development" ``` можно убрать, т.к. в конфиге вебпака прописно watch сразу на develop 
+
+``` "start": "webpack-dev-server --mode development --open" ``` запускает лайв сервер
+
+``` "clear": "del-cli dist" ``` для удаления диста (например перед пулом в репу)

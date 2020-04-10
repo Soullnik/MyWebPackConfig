@@ -1,5 +1,5 @@
 {
-  "name": "myWebPackconfig",
+  "name": "mywebpackconfig",
   "version": "1.0.0",
   "description": "text",
   "main": "index.js",
@@ -44,5 +44,13 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yarovenko-Dmitry/MyWebPackConfig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yarovenko-Dmitry/MyWebPackConfig/issues"
+  },
+  "homepage": "https://github.com/Yarovenko-Dmitry/MyWebPackConfig#readme"
 }
