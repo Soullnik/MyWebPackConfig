@@ -22,5 +22,32 @@ create basic structure sass [
 
 add index.html, app.js, style.scss to /src
 
+create webpack.config.js
+const webpack = require('webpack');
+const path = require('path');
+
+module.exports = (env, options) => {
+  const isProduction = options.mode === 'production';
+
+  const config = {
+    entry: './src/app.js',
+    output: {
+      path: path.join(__dirname, '/dist/'),
+      filename: 'bundle.js'
+    }
+  }
+
+  return config
+}
+
+npm install --save-dev clean-webpack-plugin
+
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+add to config{
+  plugins: [
+      new CleanWebpackPlugin(),
+    ]
+}
 
 

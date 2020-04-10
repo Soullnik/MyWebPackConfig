@@ -6,13 +6,14 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch",
+    "watch": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open",
     "clear": "del-cli dist"
   },
   "author": "Nikolay lozicki",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
