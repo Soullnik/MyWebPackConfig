@@ -23,7 +23,7 @@ module.exports = (env, options) => {
           test: /\.js$/,
           exclude: /node_modules/,
           use: {
-            loader: 'babel-loader',
+            loader: ['babel-loader', "eslint-loader"],
             options: {
               presets: ['@babel/preset-env']
             }
@@ -49,7 +49,10 @@ module.exports = (env, options) => {
         },
       ]
     },
-    
+    devServer: {
+      inline:true,
+      port: 3000
+    },
     plugins: [
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({

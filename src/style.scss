@@ -1,12 +1,12 @@
-@import "./sass/bootstrap-custom/custom";
-@import "~bootstrap/scss/bootstrap";
-
-@import "./sass/base/normalize";
+@import "./sass/bootstrap/bootstrap.scss";
+@import "./sass/bootstrap/custom";
+  
+// @import "./sass/base/normalize";
 
 //Abstract
-@import "./sass/abstract/constants";
-@import "./sass/abstract/mixins";
-@import "./sass/abstract/placeholders";
+// @import "./sass/abstract/constants";
+// @import "./sass/abstract/mixins";
+// @import "./sass/abstract/placeholders";
 
 //Base
 // @import "./sass/base/base";
@@ -18,10 +18,10 @@
 // @import "./sass/base/modal";
 
 //Layouts
-@import "./sass/layouts/wrapper";
-@import "./sass/layouts/header";
-@import "./sass/layouts/columns";
-@import "./sass/layouts/footer";
+// @import "./sass/layouts/wrapper";
+// @import "./sass/layouts/header";
+// @import "./sass/layouts/columns";
+// @import "./sass/layouts/footer";
 
 // Components
 // @import "./sass/components/contact-us";

@@ -90,3 +90,9 @@ add style.scss to entry
 npm install --save-dev html-webpack-plugin
 
 add new HtmlWebpackPlugin()
+
+sudo npm i -D eslint-loader
+
+npm install --save-dev babel-eslint
+
+npx install-peerdeps --dev eslint-config-airbnb
