@@ -1,27 +1,36 @@
-npm init -y
-npm install webpack webpack-cli --save-dev
-create /src
-creape git ignore and add node_modules
-add /img /js /sass to /src folder
+***npm init -y***
 
-create basic structure js [
+***npm install webpack webpack-cli --save-dev***
+
+##### create [ */src* ] #####
+
+##### create git ignore and add node_modules #####
+##### add [ */img /js /sass* ] to [ */src* ] folder #####
+
+##### create basic structure js #####
+```
+[
   1. router.js
   2. module.js
   3. view.js
   4. controller.js
   5. data.js
 ]
+```
 
-create basic structure sass [
+##### basic structure sass #####
+```
+[
   1. /abstract
     1._constants.scss
     2._mixins.scss
     3.placeholders.scss
   2. /base....
 ]
+```
 
-add index.html, app.js, style.scss to /src
-
+##### add *index.html*, *app.js*, *style.scss* to [ */src* ] #####
+```
 create webpack.config.js
 const webpack = require('webpack');
 const path = require('path');
@@ -39,9 +48,10 @@ module.exports = (env, options) => {
 
   return config
 }
+```
 
-npm install --save-dev clean-webpack-plugin
-
+***npm install --save-dev clean-webpack-plugin***
+```
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 add to config{
@@ -49,9 +59,9 @@ add to config{
       new CleanWebpackPlugin(),
     ]
 }
-
-npm install -D babel-loader @babel/core @babel/preset-env webpack
-
+```
+***npm install -D babel-loader @babel/core @babel/preset-env webpack***
+```
 {
   test: /\.m?js$/,
   exclude: /(node_modules|bower_components)/,
@@ -61,18 +71,18 @@ npm install -D babel-loader @babel/core @babel/preset-env webpack
       presets: ['@babel/preset-env']
     }
 }
-
-sudo npm install sass-loader node-sass css-loader style-loader --save-dev
-
+```
+***sudo npm install sass-loader node-sass css-loader style-loader --save-dev***
+```
 {
   test: /\.scss/,
   use: [
     'style-loader', 'sass-loader', 'sass-loader'
   ]
 }
-
-sudo npm install file-loader --save-dev
-
+```
+***sudo npm install file-loader --save-dev***
+```
 {
   test: /\.(png|jpe?g|gif|svg|mp3)$/i,
   use: [
@@ -81,24 +91,25 @@ sudo npm install file-loader --save-dev
     },
   ],
 },
-
-npm install --save-dev mini-css-extract-plugin
+```
+***npm install --save-dev mini-css-extract-plugin***
+```
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+```
+##### add *style.scss* to entry #####
 
-add style.scss to entry
+***npm install --save-dev html-webpack-plugin***
 
-npm install --save-dev html-webpack-plugin
+##### add new HtmlWebpackPlugin() #####
 
-add new HtmlWebpackPlugin()
+***sudo npm i -D eslint-loader***
 
-sudo npm i -D eslint-loader
+***npm install --save-dev babel-eslint***
 
-npm install --save-dev babel-eslint
+***npx install-peerdeps --dev eslint-config-airbnb***
 
-npx install-peerdeps --dev eslint-config-airbnb
-
-npm install -D eslint-config-prettier eslint-plugin-prettier
-
+***npm install -D eslint-config-prettier eslint-plugin-prettier***
+```
 {
   test: /\.js$/,
   exclude: /node_modules/,
@@ -107,5 +118,5 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
     // eslint options (if necessary)
   },
 },
-
-npm install webpack-dev-server --save-dev
+```
+***npm install webpack-dev-server --save-dev***
