@@ -96,3 +96,16 @@ sudo npm i -D eslint-loader
 npm install --save-dev babel-eslint
 
 npx install-peerdeps --dev eslint-config-airbnb
+
+npm install -D eslint-config-prettier eslint-plugin-prettier
+
+{
+  test: /\.js$/,
+  exclude: /node_modules/,
+  loader: 'eslint-loader',
+  options: {
+    // eslint options (if necessary)
+  },
+},
+
+npm install webpack-dev-server --save-dev
