@@ -50,4 +50,24 @@ add to config{
     ]
 }
 
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+
+{
+  test: /\.m?js$/,
+  exclude: /(node_modules|bower_components)/,
+  use: {
+    loader: 'babel-loader',
+    options: {
+      presets: ['@babel/preset-env']
+    }
+}
+
+sudo npm install sass-loader node-sass css-loader style-loader --save-dev
+
+{
+  test: /\.scss/,
+  use: [
+    'style-loader', 'sass-loader', 'sass-loader'
+  ]
+}
 
