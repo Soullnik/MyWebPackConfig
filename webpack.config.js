@@ -32,7 +32,15 @@ module.exports = (env, options) => {
           use: [
             'style-loader', 'sass-loader', 'sass-loader'
           ]
-        }
+        },
+        {
+          test: /\.(png|jpe?g|gif|mp3)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
       ]
     },
     

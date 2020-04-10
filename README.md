@@ -71,3 +71,13 @@ sudo npm install sass-loader node-sass css-loader style-loader --save-dev
   ]
 }
 
+sudo npm install file-loader --save-dev
+
+{
+  test: /\.(png|jpe?g|gif|svg|mp3)$/i,
+  use: [
+    {
+      loader: 'file-loader',
+    },
+  ],
+},
