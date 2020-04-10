@@ -87,3 +87,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 add style.scss to entry
 
+npm install --save-dev html-webpack-plugin
+
+add new HtmlWebpackPlugin()
